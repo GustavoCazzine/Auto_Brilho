@@ -1407,52 +1407,135 @@ main {
 /* ============== SEÇÃO DIFERENCIAIS (VERSÃO FINAL) ================== */
 /* =================================================================== */
 
-.diferenciais-section {
-    position: relative;
-    padding: var(--space-section) 0;
-    background-image: linear-gradient(rgba(8, 10, 19, 0.85), rgba(8, 10, 19, 0.85)), url('/assets/img/Img2.avif');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed; /* Efeito Parallax */
-}
+/* =================================================================== */
+/* ============== SEÇÃO INSTAGRAM (ESTILO INTEGRADO) ================= */
+/* =================================================================== */
 
-/* --- BLOCO "CONHEÇA O ESPECIALISTA" (NOVO) --- */
-.specialist-block {
-    display: flex;
-    flex-direction: column; /* Padrão Mobile: foto em cima, texto embaixo */
-    align-items: center;
-    gap: 30px;
-    text-align: center;
-    margin-bottom: 60px; /* Espaçamento antes da grade de diferenciais */
-    padding: var(--space-lg);
-    background: rgba(1, 22, 64, 0.2);
+.instagram-showcase {
+    /* Aplicando o mesmo efeito de "vidro" do seu design */
+    background: rgba(1, 22, 64, 0.3); /* Um pouco mais sutil que os cards */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 156, 229, 0.2); /* Usando sua cor de destaque com transparência para a borda */
     border-radius: var(--border-radius-lg);
-    border: 1px solid var(--cor-borda);
+    padding: var(--space-lg);
+    margin-bottom: 60px; /* Mantendo o mesmo espaçamento do bloco que foi removido */
+    transition: var(--transition-smooth);
 }
 
-.specialist-photo img {
-    width: 150px;
-    height: 150px;
+.instagram-showcase:hover {
+    border-color: rgba(0, 156, 229, 0.4);
+}
+
+.instagram-header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-lg);
+    margin-bottom: var(--space-lg);
+}
+
+.instagram-profile-pic img {
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
     object-fit: cover;
-    border: 4px solid var(--cor-destaque);
-    box-shadow: 0 0 30px var(--cor-destaque-transparente);
+    /* Replicando o efeito de brilho da foto do especialista */
+    border: 3px solid var(--cor-destaque);
+    box-shadow: 0 0 25px rgba(0, 156, 229, 0.5); /* RGBA da sua --cor-destaque */
 }
 
-.specialist-text h3 {
+.instagram-info .instagram-username {
     font-family: var(--fonte-display);
     font-size: var(--font-size-xl);
     color: var(--cor-texto-principal);
-    margin-bottom: var(--space-sm);
+    margin: 0 0 var(--space-xs);
 }
 
-.specialist-text p {
+.instagram-info .instagram-bio {
+    font-family: var(--fonte-principal);
     font-size: var(--font-size-base);
     color: var(--cor-texto-secundario);
-    line-height: 1.7;
-    max-width: 60ch; /* Melhora a legibilidade */
-    margin-left: auto;
-    margin-right: auto;
+    line-height: 1.6;
+    margin: 0 0 var(--space-md);
+    max-width: 50ch;
+}
+
+.instagram-follow-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--cor-destaque);
+    color: #fff; /* Cor branca para máximo contraste */
+    padding: 12px 24px;
+    border-radius: var(--border-radius-md);
+    text-decoration: none;
+    font-family: var(--fonte-principal);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-sm);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 1px solid transparent;
+    transition: var(--transition-smooth);
+}
+
+.instagram-follow-btn:hover {
+    background-color: var(--cor-gradiente-b); /* Usando a cor mais escura do gradiente para o hover */
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 156, 229, 0.2);
+}
+
+.instagram-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-md);
+}
+
+.gallery-item {
+    display: block;
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+    position: relative;
+    border: 1px solid rgba(0, 156, 229, 0.2);
+    transition: var(--transition-smooth);
+}
+
+/* Efeito de hover inspirado nos seus .diferencial-item */
+.gallery-item:hover {
+    transform: scale(1.05) translateY(-5px);
+    border-color: var(--cor-destaque);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    z-index: 10;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1); /* Efeito de zoom na imagem interna */
+}
+
+/* ================== RESPONSIVIDADE ================== */
+@media (max-width: 992px) {
+    .instagram-gallery {
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas para tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .instagram-header {
+        flex-direction: column;
+        text-align: center;
+        gap: var(--space-md);
+    }
+    
+    .instagram-profile-pic img {
+        width: 80px;
+        height: 80px;
+    }
 }
 
 /* --- GRID DOS DIFERENCIAIS (Mantido e Refinado) --- */
