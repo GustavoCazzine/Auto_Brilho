@@ -340,7 +340,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const DADOS_COMBOS = [
         {
-            icon: 'sparkles', // Ícone para brilho e renovação
+            icon: 'sun', // Ícone para brilho e renovação
             title: 'Pacote Renovação e Brilho',
             description: 'Perfeito para quem quer destacar o carro visualmente, seja para venda, troca ou para recuperar o brilho de um carro bem cuidado.',
             services: [
