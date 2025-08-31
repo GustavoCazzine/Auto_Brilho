@@ -1260,12 +1260,7 @@ main {
     gap: var(--space-lg);
     
     /* MUDANÇA PRINCIPAL: Nova animação mais rápida e suave */
-    animation: scroll-seamless 35s linear infinite;
-}
-
-/* Pausa a animação ao passar o mouse. Essencial para usabilidade! */
-.testimonial-carousel:hover .testimonial-scroller {
-    animation-play-state: paused;
+    animation: scroll-seamless 30s linear infinite;
 }
 
 @keyframes scroll-seamless {
@@ -1292,11 +1287,6 @@ main {
     /* AQUI ADICIONAMOS A LINHA SEPARADORA À ESQUERDA DO CONTEÚDO */
     border-left: 1px solid var(--cor-destaque);
     border-right: 1px solid var(--cor-destaque);
-}
-.testimonial-card:hover {
-    transform: translateY(-5px);
-    border-color: var(--cor-destaque-transparente);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
 }
 
 /* --- CABEÇALHO DO CARD --- */
