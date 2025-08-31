@@ -225,13 +225,13 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             categoria: ['higienizacoes'],
-            imageBefore: '/assets/img/gallery/higiinterna.avif',
-            imageAfter: '/assets/img/gallery/higiinterna2.avif',
+            imageBefore: '/assets/img/gallery/Ram1.avif',
+            imageAfter: '/assets/img/gallery/Ram2.avif',
             alt: 'Higienização interna do Hyundai HB20X',
-            titulo: 'Higienização Interna Profunda',
-            veiculo: 'Hyundai HB20X',
-            desafio: 'O interior apresentava acúmulo de sujeira em áreas de uso frequente, como volante, painel e bancos, além de odor causado por umidade e bactérias invisíveis.',
-            solucao: 'Realizamos uma higienização completa com vaporização e produtos antibacterianos, eliminando impurezas, maus odores e devolvendo o aspecto renovado ao interior do veículo.'
+            titulo: 'Lavagem Técnica Profissional em RAM 1500',
+            veiculo: 'RAM 1500',
+            desafio: 'O veículo apresentava sujeira acumulada do uso diário e marcas de estrada, que deixavam a pintura opaca.',
+            solucao: 'Foi realizada uma lavagem técnica completa, com etapas controladas e produtos de alta qualidade. O processo garantiu remoção segura das impurezas e devolveu o brilho intenso à caminhonete.'
         },
         {
             categoria: ['lavagens', 'polimentos'],
@@ -273,6 +273,27 @@ document.addEventListener('DOMContentLoaded', () => {
             desafio: 'O veículo apresentava sujeira acumulada nos detalhes da carroceria e rodas, com aspecto opaco causado por lavagens anteriores incorretas.',
             solucao: 'Nossa equipe foi até o local do cliente e realizou uma lavagem detalhada completa, utilizando produtos neutros e equipamentos profissionais para devolver o brilho e a proteção da pintura, sem comprometer o acabamento.'
         },
+        {
+            categoria: ['lavagens', 'lavagem-tecnica'],
+            imageBefore: '/assets/img/gallery/Jeep1.avif',
+            imageAfter: '/assets/img/gallery/Jeep2.avif',
+            alt: 'Lavagem Técnica em Jeep Renegade',
+            titulo: 'Lavagem Técnica Profissional',
+            veiculo: 'Jeep Renegade',
+            desafio: 'O veículo apresentava sujeira do uso diário e marcas de chuva, que tiravam o brilho da pintura.',
+            solucao: 'Aplicamos a lavagem técnica em etapas, com produtos de alta qualidade e microfibra, removendo impurezas com total segurança e devolvendo o brilho original.'
+        },
+        {
+            categoria: ['lavagens', 'lavagem-tecnica'],
+            imageBefore: '/assets/img/gallery/Outlander1.avif',
+            imageAfter: '/assets/img/gallery/Outlander2.avif',
+            alt: 'Higienização Interna Completa em um Mitsubishi Outlander',
+            titulo: 'Lavagem Técnica Profissional',
+            veiculo: 'Mitsubishi Outlander',
+            desafio: 'O carro acumulava poeira, marcas de chuva e perda de brilho, precisando de uma limpeza segura e eficaz.',
+            solucao: 'Realizamos uma lavagem técnica em etapas, com produtos de alta performance e microfibra, garantindo remoção completa das impurezas e restauração do brilho da pintura.'
+        },
+
     ];
 
     const DADOS_DEPOIMENTOS = [
