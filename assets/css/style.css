@@ -936,9 +936,6 @@ main {
     margin-top: 50px;
 }
 
-
-
-
 /* =================================================================== */
 /* ============= MENSAGEM DE GALERIA VAZIA ========================= */
 /* =================================================================== */
@@ -987,7 +984,6 @@ main {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }
-
 
 /* ====================================================== */
 /* MODO DETALHE (MODAL)                  */
@@ -1060,8 +1056,8 @@ main {
 /* --- ESTILO DO CONTAINER DA IMAGEM PRINCIPAL DO MODAL --- */
 .modal-image-container {
     width: 100%;
-    height: 350px; 
-    overflow: hidden; 
+    height: 300px; /* altura da div */
+    overflow: hidden; /* corta o excesso */
     background-color: #000; 
     margin-bottom: 20px; 
 }
@@ -1070,6 +1066,7 @@ main {
     width: 100%;
     height: 100%;
     object-fit: cover; 
+    object-position: center;
     display: block;
 }
 
@@ -1144,8 +1141,8 @@ main {
     overflow: hidden;
     border-radius: var(--border-radius-lg);
     --position: 50%;
-    max-height: 90vh;
-    aspect-ratio: 4 / 3;
+    max-height: 100%;
+
 }
 
 .modal-image-container .image-container {
@@ -1202,7 +1199,19 @@ main {
     place-items: center;
 }
 
+/* TABLET - telas médias */
+@media (min-width: 768px) {
+    .modal-image-container {
+        height: 550px; /* aumenta o foco da imagem */
+    }
+}
 
+/* DESKTOP - telas grandes */
+@media (min-width: 1200px) {
+    .modal-image-container {
+        height: 800px; /* ainda mais foco */
+    }
+}
 /* =================================================================== */
 /* ============= SEÇÃO PROVA SOCIAL (VERSÃO FINAL) ============= */
 /* =================================================================== */
