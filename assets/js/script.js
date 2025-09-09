@@ -202,9 +202,49 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     ];
 
-    const DADOS_GALERIA = [
+const DADOS_GALERIA = [
         {
-            categoria: ['lavagens', 'lavagem-detalhada'],
+            categoria: ['lavagens', 'lavagem-tecnica'],
+            imageBefore: '/assets/img/gallery/NissanFrontierAntes.avif',
+            imageAfter: '/assets/img/gallery/NissanFrontierDepois.avif',
+            alt: 'Lavagem técnica da Nissan Frontier',
+            titulo: 'Lavagem Técnica a Domicílio',
+            veiculo: 'Nissan Frontier',
+            desafio: 'Marcas de poeira, sujeiras resistentes e perda do brilho natural da pintura.',
+            solucao: 'Processo técnico em 2 etapas, uso de microfibra e produtos de alto desempenho. Resultado: brilho renovado, proteção da pintura e impacto visual imediato.'
+        },
+        {
+            categoria: ['lavagens', 'lavagem-tecnica'],
+            imageBefore: '/assets/img/gallery/HyundaiHB20Antes.avif',
+            imageAfter: '/assets/img/gallery/HyundaiHB20Depois.avif',
+            alt: 'Lavagem técnica do Hyundai HB20',
+            titulo: 'Lavagem Técnica a Domicílio',
+            veiculo: 'Hyundai HB20',
+            desafio: 'Acúmulo de poeira, manchas de chuva e aspecto embaçado da pintura preta.',
+            solucao: 'Lavagem técnica em duas etapas com microfibra e produtos automotivos premium. Resultado: brilho restaurado, proteção contra sujeira e visual renovado em minutos.'
+        },
+        {
+            categoria: ['lavagens', 'lavagem-tecnica'],
+            imageBefore: '/assets/img/gallery/NissanFrontierAntes1.avif',
+            imageAfter: '/assets/img/gallery/NissanFrontierDepois1.avif',
+            alt: 'Lavagem técnica da Nissan Frontier',
+            titulo: 'Lavagem Técnica a Domicílio',
+            veiculo: 'Nissan Frontier',
+            desafio: 'Poeira acumulada, manchas de chuva e aspecto opaco da pintura escura.',
+            solucao: 'Técnica em duas etapas com microfibra + produtos de alta performance. Resultado: brilho restaurado, detalhes valorizados e proteção duradoura.'
+        },
+        {
+            categoria: ['lavagens', 'lavagem-tecnica'],
+            imageBefore: '/assets/img/gallery/NissanFrontierPneuAntes.avif',
+            imageAfter: '/assets/img/gallery/NissanFrontierPneuDepois.avif',
+            alt: 'Detalhe de lavagem técnica da Nissan Frontier',
+            titulo: 'Detalhe de Lavagem Técnica',
+            veiculo: 'Nissan Frontier',
+            desafio: 'Acúmulo de sujeira em rodas, caixa de roda e detalhes internos difíceis de acessar.',
+            solucao: 'Lavagem minuciosa com escovas técnicas e microfibra, finalização com proteção automotiva. Resultado: limpeza profunda, brilho intenso e valorização dos detalhes.'
+        },   
+        {
+            categoria: ['lavagens', 'lavagem-tecnica'],
             imageBefore: '/assets/img/gallery/creta.avif',
             imageAfter: '/assets/img/gallery/creta2.avif',
             alt: 'Lavagem detalhada do Hyundai Creta Comfort',
