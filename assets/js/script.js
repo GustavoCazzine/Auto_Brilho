@@ -339,41 +339,67 @@ const DADOS_GALERIA = [
     const DADOS_DEPOIMENTOS = [
         { 
             rating: 5, 
-            highlight: 'Meu carro parece um espelho!',
-            quote: 'Serviço impecável! O brilho da vitrificação é inacreditável, meu carro parece um espelho.', 
-            authorName: 'Carlos Monteiro', 
-            authorDetail: 'Proprietário de um Audi A4', 
-            authorImg: 'assets/img/feedbacks/cliente1.avif',
+            highlight: 'Carro saiu zerado.',
+            quote: 'Serviço rápido, bem feito e com atenção nos detalhes. Ficou melhor do que muita concessionária entrega..', 
+            authorName: 'Marcos Silva', 
+            authorDetail: 'Proprietário de um Chevrolet S10', 
+            authorImg: 'assets/img/feedbacks/fotoexemplo.avif',
             source: {
                 name: 'Google',
                 // IMPORTANTE: Substitua pela URL real da sua página de reviews do Google!
-                url: 'https://www.google.com/maps/search/?api=1&query=Auto+Brilho+Piracicaba' 
+                url: '#'
             }
         },
         { 
             rating: 5, 
-            highlight: 'Superou todas as minhas expectativas.',
-            quote: 'Atendimento nota 10 e o resultado do polimento superou todas as minhas expectativas. Recomendo de olhos fechados!', 
-            authorName: 'Juliana Alves', 
-            authorDetail: 'Proprietária de uma BMW X1', 
-            authorImg: 'assets/img/feedbacks/cliente2.avif',
+            highlight: 'Capricho de verdade.',
+            quote: 'Sou exigente com limpeza e aqui entregaram o carro limpo por dentro e por fora, do jeito que eu gosto.', 
+            authorName: 'Rodrigo Matos', 
+            authorDetail: 'Proprietário de um Honda City', 
+            authorImg: 'assets/img/feedbacks/fotoexemplo.avif',
             source: {
                 name: 'Google',
                 // IMPORTANTE: Substitua pela URL real da sua página de reviews do Google!
-                url: 'https://www.google.com/maps/search/?api=1&query=Auto+Brilho+Piracicaba'
+                url: '#'
             }
         },
         { 
             rating: 5, 
-            highlight: 'Profissionalismo raro de se encontrar.',
-            quote: 'Profissionalismo raro de se encontrar. Cuidaram do meu carro como se fosse deles. A higienização interna deixou o carro com cheiro de novo.', 
-            authorName: 'Roberta Dias', 
-            authorDetail: 'Proprietária de uma Toyota Hilux', 
-            authorImg: 'assets/img/feedbacks/cliente3.avif',
+            highlight: 'Cheiro de carro novo.',
+            quote: 'A higienização interna ficou muito boa. Bancos limpos, painel tratado e nada de resto de produto.', 
+            authorName: 'Fernanda Rocha', 
+            authorDetail: 'Proprietária de um Toyota Corolla', 
+            authorImg: 'assets/img/feedbacks/fotoexemplo.avif',
             source: {
                 name: 'Google',
                 // IMPORTANTE: Substitua pela URL real da sua página de reviews do Google!
-                url: 'https://www.google.com/maps/search/?api=1&query=Auto+Brilho+Piracicaba'
+                url: '#'
+            }
+        },
+        { 
+            rating: 5, 
+            highlight: 'Valeu a pena.',
+            quote: 'Já lavei em vários lugares, mas aqui a diferença é clara. Atendimento direto e serviço bem feito.', 
+            authorName: 'Carlos Menezes', 
+            authorDetail: 'Proprietário de uma Volkswagen Amarok', 
+            authorImg: 'assets/img/feedbacks/fotoexemplo.avif',
+            source: {
+                name: 'Google',
+                // IMPORTANTE: Substitua pela URL real da sua página de reviews do Google!
+                url: '#'
+            }
+        },
+        { 
+            rating: 5, 
+            highlight: 'Serviço de confiança.',
+            quote: 'Cuidaram do carro como se fosse deles, do polimento até a lavagem das rodas. Voltarei mais vezes.', 
+            authorName: 'André Santos', 
+            authorDetail: 'Proprietário de uma HB20', 
+            authorImg: 'assets/img/feedbacks/fotoexemplo.avif',
+            source: {
+                name: 'Google',
+                // IMPORTANTE: Substitua pela URL real da sua página de reviews do Google!
+                url: '#'
             }
         }
     ];
