@@ -1,66 +1,63 @@
-# 🚘 Auto Brilho - Smart Quoting System
+# 🚘 Auto Brilho - Smart Quoting Web App
 
-> **Web App de agendamento e pré-orçamento automotivo com geração dinâmica de mensagens via WhatsApp API.**
+> **Aplicação web para estética automotiva com sistema de pré-orçamento dinâmico e integração via WhatsApp API.**
 
-![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge)
-![Badge Tech](http://img.shields.io/static/v1?label=TECH&message=JAVASCRIPT%20DOM&color=BLUE&style=for-the-badge)
+![Badge Status](http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge)
+![Badge Tech](http://img.shields.io/static/v1?label=TECH&message=JAVASCRIPT%20ES6&color=BLUE&style=for-the-badge)
 
----
+## 💻 Sobre o Projeto (Business Logic)
 
-## 💻 O Projeto (The Engineering Problem)
+O **Auto Brilho Web App** não é apenas uma landing page institucional. Ele foi projetado para resolver um gargalo comum em prestadores de serviço: o tempo gasto na triagem inicial de clientes.
 
-Muitas estéticas automotivas sofrem com um gargalo no atendimento digital: o cliente envia um "Oi" no WhatsApp, e o atendente precisa gastar tempo perguntando modelo do carro, ano e serviços desejados antes de passar um preço.
-
-O **Auto Brilha Smart System** resolve isso invertendo o fluxo. Ele atua como um funil de entrada, coletando e estruturando os dados **antes** do contato humano.
+A aplicação implementa um funil de vendas onde o usuário "monta" seu pacote de serviços visualmente. O sistema processa essas escolhas e gera um **payload estruturado** (mensagem de texto formatada), que é enviado diretamente para o WhatsApp do vendedor, entregando um lead qualificado e acelerando o fechamento.
 
 ---
 
-## ⚙️ Funcionalidades & Lógica
+## ⚙️ Engenharia & Funcionalidades
 
-### 1. Geração Dinâmica de Payload (WhatsApp API)
-O sistema não apenas envia um link. Ele constrói uma mensagem de texto complexa baseada nas variáveis de estado da aplicação.
-- **Input:** Usuário seleciona *Veículo*, *Ano*, *Local de Atendimento* e *Serviços (Checkbox)*.
-- **Processamento:** Um algoritmo em JavaScript monitora o DOM, concatena as strings selecionadas e formata a mensagem com quebras de linha e negrito (Markdown do WhatsApp).
-- **Output:** A URL final aciona a API do WhatsApp já com o texto pronto para envio.
+### 1. Gerador de Orçamento Dinâmico (Algorithm)
+Diferente de formulários estáticos, o sistema utiliza lógica de concatenação de strings em tempo real.
+- **Input:** O usuário seleciona Marca, Ano, Local e Serviços (Checkbox/Radio).
+- **Processamento:** Um *event listener* monitora alterações no DOM, captura os valores, aplica formatação Markdown (negrito/quebras de linha) e atualiza a prévia visual instantaneamente.
+- **Output:** Geração de Deep Link para API do WhatsApp (`wa.me/?text=...`).
 
-### 2. Feedback Visual em Tempo Real (DOM Manipulation)
-A seção "Prévia da Mensagem" atualiza instantaneamente a cada clique do usuário, garantindo que ele saiba exatamente o que será enviado.
-*(Veja a lógica no arquivo `script.js`)*.
+### 2. Arquitetura Baseada em Dados (Vanilla JS Components)
+Para garantir manutenibilidade e escalabilidade, o conteúdo não é "hard-coded" no HTML.
+Utilizei estruturas de dados (Arrays de Objetos JSON) para armazenar serviços, depoimentos e galeria.
+- **Exemplo:** `const DADOS_SERVICOS = [...]` alimenta a seção de serviços.
+- **Benefício:** Para adicionar um novo serviço, basta incluir um objeto no Array, sem tocar no HTML.
 
----
+### 3. SEO & Performance
+- **Schema.org:** Implementação de JSON-LD (`@type": "AutomotiveBusiness"`) para indexação rica no Google.
+- **Lazy Loading:** Otimização no carregamento de imagens da galeria.
 
-## 📸 Screenshots
-
-### Interface de Seleção e Prévia Dinâmica
-![Interface de Orçamento](caminho-para-sua-imagem-do-orcamento.png)
-*O usuário monta o pacote e o sistema gera o texto automaticamente à direita.*
-
-### Landing Page (Dark Mode & UX)
-![Landing Page](caminho-para-sua-imagem-da-lp.png)
-*Design focado em conversão e hierarquia visual.*
+### 4. UX/UI Interativo
+- **Comparador Antes/Depois:** Slider interativo implementado com JavaScript puro para demonstrar resultados de polimento.
+- **Mobile First:** Menu hambúrguer responsivo e áreas de toque otimizadas.
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## 🛠️ Tecnologias
 
-- **Core:** `HTML5`, `CSS3` (Flexbox/Grid), `JavaScript` (ES6+).
-- **Integration:** WhatsApp URL Scheme API.
-- **Design:** UI Dark Mode com foco em alto contraste (Neon/Blue).
-
----
-
-## 🚀 Como testar
-
-1. Clone o repositório.
-2. Abra o arquivo `index.html` no seu navegador.
-3. Simule um orçamente selecionando "Lavagem Detalhada" e "Vitrificação".
-4. Observe a mensagem sendo construída em tempo real.
+- **Core:** HTML5 Semântico, CSS3 (Variables, Flexbox, Grid), JavaScript (ES6+).
+- **Integração:** WhatsApp URL Scheme API.
+- **Assets:** Ícones SVG otimizados (injetados via JS para performance).
 
 ---
 
-### 👨‍💻 Autor
+## 📸 Prévias
 
-**Gustavo Cazzine**
-*Software Engineering Student | Java Backend Focus*
+### Interface de Orçamento Inteligente
+*(Adicione aqui um print da tela de orçamento)*
+> O sistema atualiza a mensagem "ao vivo" conforme o cliente clica nos serviços.
 
-[![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/gustavo-cazzine/)](https://www.linkedin.com/in/gustavo-cazzine/)
+### Galeria Interativa
+*(Adicione aqui um print do slider antes/depois)*
+
+---
+
+## 🚀 Como Executar
+
+1. Clone o repositório:
+```bash
+git clone [https://github.com/GustavoCazzine/auto-brilho-app.git](https://github.com/GustavoCazzine/auto-brilho-app.git)
