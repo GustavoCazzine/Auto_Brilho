@@ -45,17 +45,6 @@ Utilizei estruturas de dados (Arrays de Objetos JSON) para armazenar serviços, 
 
 ---
 
-## 📸 Prévias
-
-### Interface de Orçamento Inteligente
-*(Adicione aqui um print da tela de orçamento)*
-> O sistema atualiza a mensagem "ao vivo" conforme o cliente clica nos serviços.
-
-### Galeria Interativa
-*(Adicione aqui um print do slider antes/depois)*
-
----
-
 ## 🚀 Como Executar
 
 1. Clone o repositório:
